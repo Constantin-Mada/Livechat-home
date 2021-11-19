@@ -1,0 +1,313 @@
+/***************************************************************
+CSS Reset
+***************************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+
+}
+
+
+
+/***************************************************************
+Base Rules
+***************************************************************/
+h1{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-weight: 700;
+}
+
+p1{
+    font-size: 0.5rem;
+    color: gray;
+    font-weight: 400;
+}
+h2{
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+}
+p{
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-align: center;
+}
+p2{
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+    padding-bottom: 3rem;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 800;
+}
+/***************************************************************
+Layout Rules
+***************************************************************/
+.wrap{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    
+    
+}
+.team{
+    padding-top: 5%;
+    text-align: center;
+    background-color: #F6F6F7;
+    
+}
+.shop{
+    padding-top: 5rem;
+}
+
+
+
+
+/**************************************************************
+Components
+**************************************************************/
+.list-group-item {
+    border: 0px ;
+    padding: 0.2rem 0.4rem;
+    
+    margin-left: 0.5rem;
+    background-color: transparent;
+    
+}
+.u-text-mark{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+ .u-text-mark::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 21%;
+    background-image: url('design/connect/slice1.png');     
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    bottom: -.1em;
+    z-index: -1;
+
+}
+
+.navar-nav ul li:hover{
+    cursor: pointer;
+}
+
+.list-group img{
+    
+    padding: 0.3rem;
+    border-radius: 1.5rem;
+}
+.list-item{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0.2rem;
+}
+.list-item:hover{
+    background-color: #F6F6F7;
+}
+
+.channel{
+    display: inline-block;
+    width: 20%;
+    height: 10%;
+}
+.gallery{
+    
+    padding: 0.1rem;
+}
+
+.dropdown-menu{
+    width: 30rem;
+}
+
+
+.submenu li {
+    padding: 0.4rem;
+}
+.submenu-icon{
+    padding-left: 2.5rem;
+    margin-top: -1.7rem;
+}
+.submenu-btn{
+    background-color: #f6f6f7;
+    padding-left: 0;
+    padding-right: 0;
+    width: 95%;
+    margin-left: 0.9rem;
+}
+.shop-item li::before{
+    content: "";
+    position: absolute;
+    /* display: inline-block; */
+    width: 0.75rem;
+    height: 0.75rem;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M5.23 13.45l.06.05-.06-.05M13.7.4c-.85 1-1.58 2.09-2.34 3.15S9.94 5.61 9.21 6.62s-1.32 1.88-2 2.82-1.42 2.16-2.19 3.2l-.24.3c-.35-.53-.64-1.09-.94-1.65-.43-.89-.84-1.78-1.32-2.68a1.35 1.35 0 00-1.85-.5 1.38 1.38 0 00-.62.83A1.45 1.45 0 00.18 10c.36.72.71 1.44 1.09 2.16s.64 1.26 1 1.86l.25.4a4.54 4.54 0 00.52.7 2.45 2.45 0 001.35.88 1.7 1.7 0 00.92-.06 2.74 2.74 0 001-.59 9.21 9.21 0 001.35-1.63l.65-.93c1.62-2.45 3.33-4.83 5-7.23.61-.87 1.22-1.74 1.85-2.59l.46-.58a1.47 1.47 0 00.4-1 1.37 1.37 0 00-.4-1 1.38 1.38 0 00-1-.4 1.18 1.18 0 00-.91.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-top: .25rem;
+    margin-left: -1rem;
+}
+.signup{
+    background-color: #ffd000;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.world{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.world-section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.testimonial-section{
+    max-width: 66.5rem;
+}
+.testimonial-group{
+    width: 24%;
+}
+
+.testimonial:not(.ttestimonial-rendered){
+    margin: .2rem ;
+    padding: 0.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: .5rem;
+    background-color: #fff;
+    border: 1px solid #d4d4d7;
+    color: #1b1b20;
+}
+
+ .heroes {
+     background-color: #F6F6F7;
+     text-align: center;
+     padding-top: 6rem;
+   
+ }
+ .form{
+    margin-right: 0.5rem;
+    width: 70%;
+    padding: 0.2rem;
+    height: 2.5rem;;
+ }
+ .products img{
+    width: 3rem;
+    height: 2.5rem
+}
+.footer a{
+    text-decoration: none;
+    color: #1b1b20;
+
+}
+.footer p{
+    text-align: left;
+}
+/*************************************************************
+Modules
+************************************************************/
+@media only screen and ( max-width: 990px){
+    
+    .connect{
+        text-align: center;
+    }
+    .list-group{
+        justify-content: center;
+    }
+    .list-group img{
+        
+        padding: 0rem;
+        border-radius: 0rem;
+    }
+}
+
+ 
+
+
+@media only screen and (max-width:860px){
+   .row{
+       /*****width: 100%;
+      align: center;
+      ***/
+   }
+}
+
+@media only screen and (max-width:690px){
+    .testimonial-section{
+       
+        flex-wrap: nowrap!important;
+        overflow-x: hidden;
+        flex-direction: row !important;
+    }
+    .testimonial-group{
+        flex-direction: row !important;
+        flex-wrap: nowrap!important;
+        width: 100%;
+        height: auto;
+    }
+    .testimonial{
+        max-width: 15.625rem!important;
+    margin-right: .75rem;
+    }
+    .testimonial:not(.ttestimonial-rendered){
+        width: 90vw;
+    }
+    .scrollme{
+        display: block!important;
+    }
+}
+
+@media only screen and (max-width:600px){
+   .form{
+       width: 100%;
+       padding: 0.2rem;
+       margin-bottom: 0.3rem;
+   } 
+  .signup .flex-sm-row{
+      flex-direction: column!important;
+  }
+}
+@media only screen and (max-width:575px){
+    .submenu li{
+        border-bottom: 0.2px 
+    }
+    .nav-item {
+        border-bottom: 0.1rem solid #d4d4d7;
+    }
+    .dropdown-item{
+        border-bottom: 0.1rem solid #d4d4d7;
+    }
+    .dropdown-item small{
+        display:none;
+    }
+    .dropdown-menu{
+        border: 0;
+    }
+    .submenu i{
+        visibility: hidden;
+    }
+    .submenu-icon{
+        border: 0.1rem solid #d4d4d7;
+        border-radius: 2rem;
+      }
+}
+
